@@ -7,7 +7,7 @@ namespace LeetCode.AlgorithmicProblems
     {
         public static void Main()
         {
-            ITest solutionTest = new PalindromeNumberSolutionTest();
+            ITest solutionTest = new RomanToIntegerSolutionTest();
 
             solutionTest.Scenario();
         }

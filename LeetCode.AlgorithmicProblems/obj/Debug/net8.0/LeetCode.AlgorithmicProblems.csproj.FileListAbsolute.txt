@@ -16,3 +16,4 @@ D:\Projects\LeetCode.AlgorithmicProblems\LeetCode.AlgorithmicProblems\obj\Debug\
 D:\Projects\LeetCode.AlgorithmicProblems\LeetCode.AlgorithmicProblems\obj\Debug\net8.0\LeetCode.AlgorithmicProblems.pdb
 D:\Projects\LeetCode.AlgorithmicProblems\LeetCode.AlgorithmicProblems\obj\Debug\net8.0\LeetCode.AlgorithmicProblems.genruntimeconfig.cache
 D:\Projects\LeetCode.AlgorithmicProblems\LeetCode.AlgorithmicProblems\obj\Debug\net8.0\ref\LeetCode.AlgorithmicProblems.dll
+D:\Projects\LeetCode.AlgorithmicProblems\LeetCode.AlgorithmicProblems\obj\Debug\net8.0\LeetCode.AlgorithmicProblems.sourcelink.json
