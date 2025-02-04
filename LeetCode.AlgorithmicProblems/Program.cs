@@ -1,5 +1,7 @@
-﻿
-using LeetCode.AlgorithmicProblems.Problems.Tests;
+﻿using LeetCode.AlgorithmicProblems.Core;
+using LeetCode.AlgorithmicProblems.Services;
+using System.Runtime.CompilerServices;
+using LeetCode.AlgorithmicProblems.Problems;
 
 namespace LeetCode.AlgorithmicProblems
 {
@@ -7,9 +9,12 @@ namespace LeetCode.AlgorithmicProblems
     {
         public static void Main()
         {
-            ITest solutionTest = new RomanToIntegerSolutionTest();
+            var problem = Problems.PalindromeNumber.ProblemFactory.GetProblemSolver("A");
+            var runner = new ProblemRunner<int, bool>(problem);
 
-            solutionTest.Scenario();
+            runner.Run(2087667802);
+            //Console.WriteLine("2087667802".Reverse().ToArray());
+
         }
     }
 }
