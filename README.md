@@ -34,7 +34,7 @@ LeetCode.AlgorithmicProblems.Tests/    # Tests and input data
 
 ## Features
 
-- **Multiple problem-solving approaches:** Easily switch between naive and optimized solutions  
+- **Multiple problem-solving approaches:** Easily switch between solution implementations  
 - **Unit tests:** Testing solutions through different sets of input data
 - **Modular architecture:** Clean separation of concerns  
 
