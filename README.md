@@ -9,10 +9,17 @@ All solutions are my personal implementation of problems from the LeetCode platf
 
 ```
 LeetCode.AlgorithmicProblems/
-├── Problems/                          # Problem definitions and solutions
-└── Services/                          # Core services (e.g., ProblemRunner)
-LeetCode.AlgorithmicProblems.Tests/    # Tests and input data
-└── TestData/                          # Test data
+├── Core/                                # Interfaces and abstractions for problem definitions
+├── Problems/                            # Problem definitions and solutions
+└── Services/                            # Core services (e.g., ProblemRunner)
+LeetCode.AlgorithmicProblems.Data/       # Data loaders and JSON input files
+├── Models/                              # Problem definitions and solutions
+├── DataLoaders/                         # Data loader classes
+└── Data/                                # JSON files used for problem data
+LeetCode.AlgorithmicProblems.Benchmarks/ # Benchmark tests for performance evaluation
+└──Benchmarks                            # Benchmark classes
+LeetCode.AlgorithmicProblems.Tests/      # Unit tests and test data
+└── TestCases/                           # Test classes
 ```
 
 ---
@@ -23,7 +30,7 @@ LeetCode.AlgorithmicProblems.Tests/    # Tests and input data
   <summary>Click to view all problems</summary>
 
 |  #  |    Problem    | Solution Link  |
-|-----|--------------|------------|
+|-----|--------------|----------------|
 |9    | [**Palindrome Number**](https://leetcode.com/problems/palindrome-number) | [Solutions](LeetCode.AlgorithmicProblems/Problems/PalindromeNumber/) |
 |13   | [**Roman to Integer**](https://leetcode.com/problems/roman-to-integer) | [Solutions](LeetCode.AlgorithmicProblems/Problems/RomanToInteger/) |
 |14   | [**Longest Common Prefix**](https://leetcode.com/problems/longest-common-prefix) | [Solutions](LeetCode.AlgorithmicProblems/Problems/LongestCommonPrefix/) |
@@ -37,6 +44,8 @@ LeetCode.AlgorithmicProblems.Tests/    # Tests and input data
 - **Multiple problem-solving approaches:** Easily switch between solution implementations  
 - **Unit tests:** Testing solutions through different sets of input data
 - **Modular architecture:** Clean separation of concerns  
+- **Data-driven testing:** Load input data dynamically using JSON files
+- **Benchmarking:** Measure the performance of algorithms
 
 ---
 
@@ -63,6 +72,12 @@ LeetCode.AlgorithmicProblems.Tests/    # Tests and input data
    dotnet test
    ```
 
+5. Run benchmarks:
+   ```bash
+   cd LeetCode.AlgorithmicProblems.Benchmarks
+   dotnet run -c Release
+   ```
+
 ---
 
 ## Example Problems
@@ -85,3 +100,4 @@ Given an integer, determine if it is a palindrome.
 Contributions are welcome! Please fork this repository and submit pull requests.
 
 ---
+
