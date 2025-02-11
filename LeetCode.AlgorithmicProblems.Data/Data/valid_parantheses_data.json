@@ -1,0 +1,62 @@
+[
+  {
+    "Input": "()",
+    "Expected": true
+  },
+  {
+    "Input": "()[]{}", 
+    "Expected": true
+  },
+  {
+    "Input": "(]",
+    "Expected": false
+  },
+  {
+    "Input": "([])",
+    "Expected": true
+  },
+  {
+    "Input": "({[]}",
+    "Expected": false
+  },
+  {
+    "Input": "]",
+    "Expected": false
+  },
+  {
+    "Input": "(",
+    "Expected": false
+  },
+  {
+    "Input": "{([)}]",
+    "Expected": false
+  },
+  {
+    "Input": "{{}}",
+    "Expected": true
+  },
+  {
+    "Input": "[]]",
+    "Expected": false
+  },
+  {
+    "Input": "}}}",
+    "Expected": false
+  },
+  {
+    "Input": "[][][][]{}()",
+    "Expected": true
+  },
+  {
+    "Input": "[(){([(){}[]]}]{}",
+    "Expected": false
+  },
+  {
+    "Input": "[(){([(){}[]]}]{}]",
+    "Expected": false
+  },
+  {
+    "Input": "[(){([(){}[{[{[{[{[{[{}]}]}]}]}]}]])}]{}",
+    "Expected": true
+  }
+]

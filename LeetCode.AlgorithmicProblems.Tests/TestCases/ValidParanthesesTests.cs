@@ -1,13 +1,18 @@
-﻿using LeetCode.AlgorithmicProblems.Problems.RomanToInteger;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using LeetCode.AlgorithmicProblems.Problems.ValidParantheses;
 
 namespace LeetCode.AlgorithmicProblems.Tests.TestCases
 {
-    public class RomanToIntegerTests
+    public class ValidParanthesesTests
     {
         [Theory]
         [MemberData(nameof(GetTestData))]
-        [Trait("RomanToInteger", "A")]
-        public void SolutionA_ShouldReturnCorrectResult(string romanNumber, int expected)
+        [Trait("ValidParantheses", "A")]
+        public void SolutionA_ShouldReturnCorrectResult(string romanNumber, bool expected)
         {
             var problem = ProblemFactory.GetProblemSolver("A");
             Assert.Equal(expected, problem.Solve(romanNumber));
@@ -15,7 +20,7 @@ namespace LeetCode.AlgorithmicProblems.Tests.TestCases
 
         public static IEnumerable<object[]> GetTestData()
         {
-            var loader = new RomanToIntegerDataLoader();
+            var loader = new ValidParanthesesDataLoader();
             var data = loader.LoadData();
 
             foreach (var item in data)

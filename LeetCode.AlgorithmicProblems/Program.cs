@@ -6,10 +6,10 @@ namespace LeetCode.AlgorithmicProblems
     {
         public static void Main()
         {
-            var problem = Problems.RomanToInteger.ProblemFactory.GetProblemSolver("A");
-            var runner = new ProblemRunner<string, int>(problem);
+            var problem = Problems.ValidParantheses.ProblemFactory.GetProblemSolver("A");
+            var runner = new ProblemRunner<string, bool>(problem);
 
-            runner.Run("DM");
+            runner.Run("[(){()}]]");
         }
     }
 }
