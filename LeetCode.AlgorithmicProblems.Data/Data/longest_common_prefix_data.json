@@ -1,0 +1,38 @@
+[
+  {
+    "Input": [ "prefix", "pre", "pref" ],
+    "Expected": "pre"
+  },
+  {
+    "Input": [ "word", "words", "goals" ],
+    "Expected": ""
+  },
+  {
+    "Input": [ "", "", "" ],
+    "Expected": ""
+  },
+  {
+    "Input": [ "hello", "hello" ],
+    "Expected": "hello"
+  },
+  {
+    "Input": [ "okey", "ok" ],
+    "Expected": "ok"
+  },
+  {
+    "Input": [ "test", "tset" ],
+    "Expected": "t"
+  },
+  {
+    "Input": [ "pref", "prefx", "pre", "wordpre" ],
+    "Expected": ""
+  },
+  {
+    "Input": [ "smaller", "smalle", "small", "smal", "sma", "sm" ],
+    "Expected": "sm"
+  },
+  {
+    "Input": [ "gr", "gre", "grea", "grea", "great", "greate", "greater" ],
+    "Expected": "gr"
+  }
+]

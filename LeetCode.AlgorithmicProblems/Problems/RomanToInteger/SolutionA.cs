@@ -1,13 +1,8 @@
 ﻿using LeetCode.AlgorithmicProblems.Core;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LeetCode.AlgorithmicProblems.Problems.RomanToInteger
 {
-    internal class SolutionA : IProblem<string, int>
+    public class SolutionA : IProblem<string, int>
     {
         public string ProblemName => "Roman to integer - Solution A";
 
@@ -46,6 +41,7 @@ namespace LeetCode.AlgorithmicProblems.Problems.RomanToInteger
 
                             if (indexOfRomanDigit >= 0 && indexOfRomanDigit + 1 < romanKeys.Count)
                             {
+                                
                                 if (romanNumber[i + 1] == romanKeys[indexOfRomanDigit + 1])
                                 {
                                     result += romanDict.ElementAt(indexOfRomanDigit + 1).Value - romanDict.ElementAt(indexOfRomanDigit).Value;
@@ -62,7 +58,6 @@ namespace LeetCode.AlgorithmicProblems.Problems.RomanToInteger
                                     }
                                 }
                             }
-
                         }
                         result += romanDict[romanNumber[i]];
 
