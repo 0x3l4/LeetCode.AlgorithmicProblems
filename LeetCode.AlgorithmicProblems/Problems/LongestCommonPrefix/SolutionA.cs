@@ -1,33 +1,28 @@
 ﻿using LeetCode.AlgorithmicProblems.Core;
-using Microsoft.VisualBasic;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace LeetCode.AlgorithmicProblems.Problems.LongestCommonPrefix
 {
-    internal class SolutionA : IProblem<string[], string>
+    public class SolutionA : IProblem<string[], string>
     {
         public string ProblemName => "Longest common prefix - Solution A";
 
-        public string Solve(string[] input)
+        public string Solve(string[] words)
         {
-            if (input == null || input?.Length == 0)
+            if (words == null || words?.Length == 0)
             {
                 return "";
             }
 
-            StringBuilder longestPrefix = new StringBuilder(input.First());
+            StringBuilder longestPrefix = new StringBuilder(words!.First());
 
-            for (int i = 1; i < input.Length; i++)
+            for (int i = 1; i < words!.Length; i++)
             {
                 for (int j = 0; j < longestPrefix.Length; j++)
                 {
-                    if (j < input[i].Length)
+                    if (j < words[i].Length)
                     {
-                        if (longestPrefix[j] != input[i][j])
+                        if (longestPrefix[j] != words[i][j])
                         {
                             longestPrefix.Remove(j, longestPrefix.Length - j);
 

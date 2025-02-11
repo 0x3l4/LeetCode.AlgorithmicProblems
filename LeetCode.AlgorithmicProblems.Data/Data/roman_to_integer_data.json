@@ -1,0 +1,62 @@
+[
+  {
+    "Input": "I",
+    "Expected": 1
+  },
+  {
+    "Input": "V",
+    "Expected": 5
+  },
+  {
+    "Input": "X",
+    "Expected": 10
+  },
+  {
+    "Input": "L",
+    "Expected": 50
+  },
+  {
+    "Input": "C",
+    "Expected": 100
+  },
+  {
+    "Input": "D",
+    "Expected": 500
+  },
+  {
+    "Input": "M",
+    "Expected": 1000
+  },
+  {
+    "Input": "VI",
+    "Expected": 6
+  },
+  {
+    "Input": "IX",
+    "Expected": 9
+  },
+  {
+    "Input": "MMXXV",
+    "Expected": 2025
+  },
+  {
+    "Input": "MCMXCIX",
+    "Expected": 1999
+  },
+  {
+    "Input": "MCMXCIII",
+    "Expected": 1993
+  },
+  {
+    "Input": "MMCM",
+    "Expected": 2900
+  },
+  {
+    "Input": "XVII",
+    "Expected": 17
+  },
+  {
+    "Input": "XIII",
+    "Expected": 13
+  }
+]

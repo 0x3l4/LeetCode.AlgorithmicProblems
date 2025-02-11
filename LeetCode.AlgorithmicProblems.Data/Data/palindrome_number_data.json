@@ -1,0 +1,46 @@
+[
+  {
+    "Input": 121,
+    "Expected": true
+  },
+  {
+    "Input": -121,
+    "Expected": false
+  },
+  {
+    "Input": 123,
+    "Expected": false
+  },
+  {
+    "Input": -2100000009,
+    "Expected": false
+  },
+  {
+    "Input": -2087667802,
+    "Expected": false
+  },
+  {
+    "Input": -10,
+    "Expected": false
+  },
+  {
+    "Input": 12321,
+    "Expected": true
+  },
+  {
+    "Input": 4554,
+    "Expected": true
+  },
+  {
+    "Input": 2022,
+    "Expected": false
+  },
+  {
+    "Input": 2087667802,
+    "Expected": true
+  },
+  {
+    "Input": 2100000009,
+    "Expected": false
+  }
+]
