@@ -4,7 +4,12 @@ namespace LeetCode.AlgorithmicProblems.Data.DataLoaders
 {
     public abstract class DataLoader<T>
     {
-        protected string _fileName = string.Empty;
+        protected string _fileName;
+
+        protected DataLoader(string fileName)
+        {
+            _fileName = fileName;
+        }
 
         public List<T> LoadData()
         {

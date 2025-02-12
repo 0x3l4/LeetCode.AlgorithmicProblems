@@ -1,15 +1,17 @@
 ﻿using LeetCode.AlgorithmicProblems.Core;
+using LeetCode.AlgorithmicProblems.Models.Input;
+using LeetCode.AlgorithmicProblems.Models.Output;
 
 namespace LeetCode.AlgorithmicProblems.Problems.PalindromeNumber
 {
-    public class SolutionA : IProblem<int, bool>
+    public class SolutionA : IProblem<PalindromeNumberInput, PalindromeNumberOutput>
     {
-        public string ProblemName => "Palindrome number - Solution A";
+        public string ProblemName => "Palindrome Number - Solution A";
 
-        public bool Solve(int input)
+        public PalindromeNumberOutput Solve(PalindromeNumberInput input)
         {
-            string convertedInput = input.ToString();
-            return convertedInput == new string(convertedInput.Reverse().ToArray());
+            string convertedInput = input.Number.ToString();
+            return new() { IsPalindrome = convertedInput == new string(convertedInput.Reverse().ToArray()) };
         }
     }
 }

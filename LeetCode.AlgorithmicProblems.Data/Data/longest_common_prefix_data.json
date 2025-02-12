@@ -1,38 +1,74 @@
 [
   {
-    "Input": [ "prefix", "pre", "pref" ],
-    "Expected": "pre"
+    "Input": {
+      "Words": [ "prefix", "pre", "pref" ]
+    },
+    "Expected": {
+      "Prefix": "pre"
+    }
   },
   {
-    "Input": [ "word", "words", "goals" ],
-    "Expected": ""
+    "Input": {
+      "Words": [ "word", "words", "goals" ]
+    },
+    "Expected": {
+      "Prefix": ""
+    }
   },
   {
-    "Input": [ "", "", "" ],
-    "Expected": ""
+    "Input": {
+      "Words": [ "", "", "" ]
+    },
+    "Expected": {
+      "Prefix": ""
+    }
   },
   {
-    "Input": [ "hello", "hello" ],
-    "Expected": "hello"
+    "Input": {
+      "Words": [ "full", "full" ]
+    },
+    "Expected": {
+      "Prefix": "full"
+    }
   },
   {
-    "Input": [ "okey", "ok" ],
-    "Expected": "ok"
+    "Input": {
+      "Words": [ "okey", "ok" ]
+    },
+    "Expected": {
+      "Prefix": "ok"
+    }
   },
   {
-    "Input": [ "test", "tset" ],
-    "Expected": "t"
+    "Input": {
+      "Words": [ "test", "tset" ]
+    },
+    "Expected": {
+      "Prefix": "t"
+    }
   },
   {
-    "Input": [ "pref", "prefx", "pre", "wordpre" ],
-    "Expected": ""
+    "Input": {
+      "Words": [ "pref", "prefx", "pre", "wordpre" ]
+    },
+    "Expected": {
+      "Prefix": ""
+    }
   },
   {
-    "Input": [ "smaller", "smalle", "small", "smal", "sma", "sm" ],
-    "Expected": "sm"
+    "Input": {
+      "Words": [ "smaller", "smalle", "small", "smal", "sma", "sm" ]
+    },
+    "Expected": {
+      "Prefix": "sm"
+    }
   },
   {
-    "Input": [ "gr", "gre", "grea", "grea", "great", "greate", "greater" ],
-    "Expected": "gr"
+    "Input": {
+      "Words": [ "gr", "gre", "grea", "grea", "great", "greate", "greater" ]
+    },
+    "Expected": {
+      "Prefix": "gr"
+    }
   }
 ]

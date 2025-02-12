@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace LeetCode.AlgorithmicProblems.Data.DataLoaders
 {
-    public class ValidParanthesesDataLoader : 
-        DataLoader<TestData<ValidParanthesesInput, ValidParanthesesOutput>>
+    public class TwoSumDataLoader : 
+        DataLoader<TestData<TwoSumInput, TwoSumOutput>>
     {
-        public ValidParanthesesDataLoader() : base("valid_parantheses_data.json")
+        public TwoSumDataLoader() : base("two_sum_data.json")
         {
 
         }

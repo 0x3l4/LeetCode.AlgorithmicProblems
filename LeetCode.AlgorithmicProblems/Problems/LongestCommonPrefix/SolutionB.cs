@@ -1,46 +1,52 @@
 ﻿using LeetCode.AlgorithmicProblems.Core;
 using LeetCode.AlgorithmicProblems.Models.Input;
 using LeetCode.AlgorithmicProblems.Models.Output;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace LeetCode.AlgorithmicProblems.Problems.LongestCommonPrefix
 {
-    public class SolutionA : IProblem<LongestCommonPrefixInput, LongestCommonPrefixOutput>
+    public class SolutionB : IProblem<LongestCommonPrefixInput, LongestCommonPrefixOutput>
     {
-        public string ProblemName => "Longest Common Prefix - Solution A";
+        public string ProblemName => "Longest common prefix - Solution B";
 
         public LongestCommonPrefixOutput Solve(LongestCommonPrefixInput input)
         {
-            StringBuilder longestPrefix = new StringBuilder(input.Words.First());
+            string word = input.Words.First();
+
+            int longestPrefixLength = word.Length;
 
             for (int i = 1; i < input.Words.Length; i++)
             {
-                for (int j = 0; j < longestPrefix.Length; j++)
+                for (int j = 0; j < longestPrefixLength; j++)
                 {
                     if (j < input.Words[i].Length)
                     {
-                        if (longestPrefix[j] != input.Words[i][j])
+                        if (word[j] != input.Words[i][j])
                         {
-                            longestPrefix.Remove(j, longestPrefix.Length - j);
+                            longestPrefixLength = j;
 
                             break;
                         }
                     }
                     else
                     {
-                        longestPrefix.Remove(j, longestPrefix.Length - j);
+                        longestPrefixLength = j;
 
                         break;
                     }
                 }
 
-                if (longestPrefix.Equals(""))
+                if (longestPrefixLength == 0)
                 {
                     return new() { Prefix = "" };
                 }
             }
 
-            return new() { Prefix = longestPrefix.ToString() };
+            return new() { Prefix = word.Substring(0, longestPrefixLength) };
         }
     }
 }

@@ -1,16 +1,15 @@
 ﻿using LeetCode.AlgorithmicProblems.Core;
+using LeetCode.AlgorithmicProblems.Models.Input;
+using LeetCode.AlgorithmicProblems.Models.Output;
 
 namespace LeetCode.AlgorithmicProblems.Problems.RomanToInteger
 {
-    public class SolutionA : IProblem<string, int>
+    public class SolutionA : IProblem<RomanToIntegerInput, RomanToIntegerOutput>
     {
-        public string ProblemName => "Roman to integer - Solution A";
+        public string ProblemName => "Roman to Integer - Solution A";
 
-        public int Solve(string input)
+        public RomanToIntegerOutput Solve(RomanToIntegerInput input)
         {
-            string romanNumber = input.ToUpper();
-            int result = 0;
-
             Dictionary<char, int> romanDict = new Dictionary<char, int>()
             {
                 { 'I', 1 },
@@ -23,10 +22,11 @@ namespace LeetCode.AlgorithmicProblems.Problems.RomanToInteger
             };
 
             var romanKeys = romanDict.Keys.ToList();
+            int result = 0;
 
-            for (int i = 0; i < romanNumber.Length; i++)
+            for (int i = 0; i < input.RomanNumber.Length; i++)
             {
-                switch (romanNumber[i])
+                switch (input.RomanNumber[i])
                 {
                     case 'I':
                     case 'V':
@@ -35,14 +35,14 @@ namespace LeetCode.AlgorithmicProblems.Problems.RomanToInteger
                     case 'C':
                     case 'D':
                     case 'M':
-                        if (i + 1 < romanNumber.Length)
+                        if (i + 1 < input.RomanNumber.Length)
                         {
-                            int indexOfRomanDigit = romanKeys.IndexOf(romanNumber[i]);
+                            int indexOfRomanDigit = romanKeys.IndexOf(input.RomanNumber[i]);
 
                             if (indexOfRomanDigit >= 0 && indexOfRomanDigit + 1 < romanKeys.Count)
                             {
                                 
-                                if (romanNumber[i + 1] == romanKeys[indexOfRomanDigit + 1])
+                                if (input.RomanNumber[i + 1] == romanKeys[indexOfRomanDigit + 1])
                                 {
                                     result += romanDict.ElementAt(indexOfRomanDigit + 1).Value - romanDict.ElementAt(indexOfRomanDigit).Value;
                                     i++;
@@ -50,7 +50,7 @@ namespace LeetCode.AlgorithmicProblems.Problems.RomanToInteger
                                 }
                                 else if (indexOfRomanDigit + 2 < romanKeys.Count)
                                 {
-                                    if (romanNumber[i + 1] == romanKeys[indexOfRomanDigit + 2])
+                                    if (input.RomanNumber[i + 1] == romanKeys[indexOfRomanDigit + 2])
                                     {
                                         result += romanDict.ElementAt(indexOfRomanDigit + 2).Value - romanDict.ElementAt(indexOfRomanDigit).Value;
                                         i++;
@@ -59,7 +59,7 @@ namespace LeetCode.AlgorithmicProblems.Problems.RomanToInteger
                                 }
                             }
                         }
-                        result += romanDict[romanNumber[i]];
+                        result += romanDict[input.RomanNumber[i]];
 
                         break;
                     default:
@@ -67,7 +67,7 @@ namespace LeetCode.AlgorithmicProblems.Problems.RomanToInteger
                 }
             }
 
-            return result;
+            return new() { Number = result };
         }
     }
 }

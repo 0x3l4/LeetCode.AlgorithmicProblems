@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using LeetCode.AlgorithmicProblems.Problems.ValidParantheses;
+using LeetCode.AlgorithmicProblems.Models.Input;
+using LeetCode.AlgorithmicProblems.Models.Output;
 
 namespace LeetCode.AlgorithmicProblems.Benchmarks.Benchmarks
 {
@@ -18,9 +20,9 @@ namespace LeetCode.AlgorithmicProblems.Benchmarks.Benchmarks
 
         [Benchmark]
         [ArgumentsSource(nameof(GetTestData))]
-        public bool SolutionA(string parantheses) => _solutionA.Solve(parantheses);
+        public ValidParanthesesOutput SolutionA(ValidParanthesesInput parantheses) => _solutionA.Solve(parantheses);
 
-        public IEnumerable<string?> GetTestData()
+        public IEnumerable<ValidParanthesesInput> GetTestData()
         {
             var loader = new ValidParanthesesDataLoader();
             var data = loader.LoadData();

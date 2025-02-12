@@ -1,4 +1,6 @@
 ﻿using LeetCode.AlgorithmicProblems.Core;
+using LeetCode.AlgorithmicProblems.Models.Input;
+using LeetCode.AlgorithmicProblems.Models.Output;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,43 +9,43 @@ using System.Threading.Tasks;
 
 namespace LeetCode.AlgorithmicProblems.Problems.ValidParantheses
 {
-    public class SolutionA : IProblem<string, bool>
+    public class SolutionA : IProblem<ValidParanthesesInput, ValidParanthesesOutput>
     {
         public string ProblemName => "Valid parantheses - Solution A";
 
-        public bool Solve(string input)
+        public ValidParanthesesOutput Solve(ValidParanthesesInput input)
         {
             Stack<char> parantheses = new Stack<char>();
 
-            for (int i = 0; i < input.Length; i++)
+            for (int i = 0; i < input.Parantheses.Length; i++)
             {
-                if (input[i] == '(' || input[i] == '{' || input[i] == '[')
+                if (input.Parantheses[i] == '(' || input.Parantheses[i] == '{' || input.Parantheses[i] == '[')
                 {
-                    parantheses.Push(input[i]);
+                    parantheses.Push(input.Parantheses[i]);
                 }
                 else if (parantheses.Count > 0)
                 {
                     char paranthesis = parantheses.Pop();
 
-                    if (!(paranthesis == '(' && input[i] == ')' ||
-                        paranthesis == '{' && input[i] == '}' ||
-                        paranthesis == '[' && input[i] == ']'))
+                    if (!(paranthesis == '(' && input.Parantheses[i] == ')' ||
+                        paranthesis == '{' && input.Parantheses[i] == '}' ||
+                        paranthesis == '[' && input.Parantheses[i] == ']'))
                     {
-                        return false;
+                        return new() { IsValid = false };
                     }
                 }
                 else
                 {
-                    return false;
+                    return new() { IsValid = false };
                 }
             }
 
             if (parantheses.Count > 0)
             {
-                return false;
+                return new() { IsValid = false };
             }
 
-            return true;
+            return new() { IsValid = true };
         }
     }
 }

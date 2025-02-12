@@ -1,10 +1,12 @@
 ﻿using LeetCode.AlgorithmicProblems.Core;
+using LeetCode.AlgorithmicProblems.Models.Input;
+using LeetCode.AlgorithmicProblems.Models.Output;
 
 namespace LeetCode.AlgorithmicProblems.Problems.PalindromeNumber
 {
     public static class ProblemFactory
     {
-        public static IProblem<int, bool> GetProblemSolver(string type)
+        public static IProblem<PalindromeNumberInput, PalindromeNumberOutput> GetProblemSolver(string type)
         {
             return type switch
             {

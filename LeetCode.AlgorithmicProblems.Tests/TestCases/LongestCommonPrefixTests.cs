@@ -1,4 +1,6 @@
-﻿using LeetCode.AlgorithmicProblems.Problems.LongestCommonPrefix;
+﻿using LeetCode.AlgorithmicProblems.Models.Input;
+using LeetCode.AlgorithmicProblems.Models.Output;
+using LeetCode.AlgorithmicProblems.Problems.LongestCommonPrefix;
 
 namespace LeetCode.AlgorithmicProblems.Tests.TestCases
 {
@@ -7,10 +9,19 @@ namespace LeetCode.AlgorithmicProblems.Tests.TestCases
         [Theory]
         [MemberData(nameof(GetTestData))]
         [Trait("LongestCommonPrefix", "A")]
-        public void SolutionA_ShouldReturnCorrectResult(string[] words, string expected)
+        public void SolutionA_ShouldReturnCorrectResult(LongestCommonPrefixInput input, LongestCommonPrefixOutput expected)
         {
             var problem = ProblemFactory.GetProblemSolver("A");
-            Assert.Equal(expected, problem.Solve(words));
+            Assert.Equal(expected.Prefix, problem.Solve(input).Prefix);
+        }
+
+        [Theory]
+        [MemberData(nameof(GetTestData))]
+        [Trait("LongestCommonPrefix", "B")]
+        public void SolutionB_ShouldReturnCorrectResult(LongestCommonPrefixInput input, LongestCommonPrefixOutput expected)
+        {
+            var problem = ProblemFactory.GetProblemSolver("B");
+            Assert.Equal(expected.Prefix, problem.Solve(input).Prefix);
         }
 
         public static IEnumerable<object[]> GetTestData()

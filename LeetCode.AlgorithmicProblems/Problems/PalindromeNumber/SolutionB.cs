@@ -1,31 +1,33 @@
 ﻿using LeetCode.AlgorithmicProblems.Core;
+using LeetCode.AlgorithmicProblems.Models.Input;
+using LeetCode.AlgorithmicProblems.Models.Output;
 
 namespace LeetCode.AlgorithmicProblems.Problems.PalindromeNumber
 {
-    public class SolutionB : IProblem<int, bool>
+    public class SolutionB : IProblem<PalindromeNumberInput, PalindromeNumberOutput>
     {
-        public string ProblemName => "Palindrome number - Solution B";
+        public string ProblemName => "Palindrome Number - Solution B";
 
-        public bool Solve(int input)
+        public PalindromeNumberOutput Solve(PalindromeNumberInput input)
         {
-            if (input < 0)
+            if (input.Number < 0)
             {
-                return false;
+                return new() { IsPalindrome = false };
             }
-            if (input == 0)
+            if (input.Number == 0)
             {
-                return true;
+                return new() { IsPalindrome = true };
             }
 
             bool isPalindrome = false;
 
             int reversedNumber = 0;
-            int startX = input;
+            int startX = input.Number;
             int remainderOfNumber;
 
-            while (input > 0 && !isPalindrome)
+            while (input.Number > 0 && !isPalindrome)
             {
-                remainderOfNumber = input % 10;
+                remainderOfNumber = input.Number % 10;
                 
                 try
                 {
@@ -33,10 +35,10 @@ namespace LeetCode.AlgorithmicProblems.Problems.PalindromeNumber
                 }
                 catch (OverflowException)
                 {
-                    return false;
+                    return new() { IsPalindrome = false };
                 }
 
-                input /= 10;
+                input.Number /= 10;
 
                 if (reversedNumber == startX)
                 {
@@ -44,7 +46,7 @@ namespace LeetCode.AlgorithmicProblems.Problems.PalindromeNumber
                 }
             }
 
-            return isPalindrome;
+            return new() { IsPalindrome = isPalindrome };
         }
     }
 }

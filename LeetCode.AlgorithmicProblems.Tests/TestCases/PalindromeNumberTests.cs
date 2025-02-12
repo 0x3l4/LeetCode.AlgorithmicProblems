@@ -1,4 +1,6 @@
-﻿using LeetCode.AlgorithmicProblems.Problems.PalindromeNumber;
+﻿using LeetCode.AlgorithmicProblems.Models.Input;
+using LeetCode.AlgorithmicProblems.Models.Output;
+using LeetCode.AlgorithmicProblems.Problems.PalindromeNumber;
 
 namespace LeetCode.AlgorithmicProblems.Tests.TestCases
 {
@@ -7,19 +9,19 @@ namespace LeetCode.AlgorithmicProblems.Tests.TestCases
         [Theory]
         [MemberData(nameof(GetTestData))]
         [Trait("PalindromeNumber", "A")]
-        public void SolutionA_ShouldReturnCorrectResult(int number, bool expected)
+        public void SolutionA_ShouldReturnCorrectResult(PalindromeNumberInput number, PalindromeNumberOutput expected)
         {
             var problem = ProblemFactory.GetProblemSolver("A");
-            Assert.Equal(expected, problem.Solve(number));
+            Assert.Equal(expected.IsPalindrome, problem.Solve(number).IsPalindrome);
         }
 
         [Theory]
         [MemberData(nameof(GetTestData))]
         [Trait("PalindromeNumber", "B")]
-        public void SolutionB_ShouldReturnCorrectResult(int number, bool expected)
+        public void SolutionB_ShouldReturnCorrectResult(PalindromeNumberInput number, PalindromeNumberOutput expected)
         {
             var problem = ProblemFactory.GetProblemSolver("B");
-            Assert.Equal(expected, problem.Solve(number));
+            Assert.Equal(expected.IsPalindrome, problem.Solve(number).IsPalindrome);
         }
 
         public static IEnumerable<object[]> GetTestData()

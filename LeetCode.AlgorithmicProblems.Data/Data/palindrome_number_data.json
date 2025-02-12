@@ -1,46 +1,82 @@
 [
   {
-    "Input": 121,
-    "Expected": true
+    "Input": {
+      "Number": 121
+    },
+    "Expected": {
+      "IsPalindrome": true
+    }
   },
   {
-    "Input": -121,
-    "Expected": false
+    "Input": {
+      "Number": -121
+    },
+    "Expected": {
+      "IsPalindrome": false
+    }
   },
   {
-    "Input": 123,
-    "Expected": false
+    "Input": {
+      "Number": -2100000009
+    },
+    "Expected": {
+      "IsPalindrome": false
+    }
   },
   {
-    "Input": -2100000009,
-    "Expected": false
+    "Input": {
+      "Number": -2087667802
+    },
+    "Expected": {
+      "IsPalindrome": false
+    }
   },
   {
-    "Input": -2087667802,
-    "Expected": false
+    "Input": {
+      "Number": -10
+    },
+    "Expected": {
+      "IsPalindrome": false
+    }
   },
   {
-    "Input": -10,
-    "Expected": false
+    "Input": {
+      "Number": 12321
+    },
+    "Expected": {
+      "IsPalindrome": true
+    }
   },
   {
-    "Input": 12321,
-    "Expected": true
+    "Input": {
+      "Number": 4554
+    },
+    "Expected": {
+      "IsPalindrome": true
+    }
   },
   {
-    "Input": 4554,
-    "Expected": true
+    "Input": {
+      "Number": 2022
+    },
+    "Expected": {
+      "IsPalindrome": false
+    }
   },
   {
-    "Input": 2022,
-    "Expected": false
+    "Input": {
+      "Number": 2087667802
+    },
+    "Expected": {
+      "IsPalindrome": true
+    }
   },
   {
-    "Input": 2087667802,
-    "Expected": true
-  },
-  {
-    "Input": 2100000009,
-    "Expected": false
+    "Input": {
+      "Number": 2100000009
+    },
+    "Expected": {
+      "IsPalindrome": false
+    }
   }
 ]

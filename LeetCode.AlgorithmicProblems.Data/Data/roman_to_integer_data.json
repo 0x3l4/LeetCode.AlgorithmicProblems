@@ -1,62 +1,122 @@
 [
   {
-    "Input": "I",
-    "Expected": 1
+    "Input": {
+      "RomanNumber": "I"
+    },
+    "Expected": {
+      "Number": 1
+    }
   },
   {
-    "Input": "V",
-    "Expected": 5
+    "Input": {
+      "RomanNumber": "V"
+    },
+    "Expected": {
+      "Number": 5
+    }
   },
   {
-    "Input": "X",
-    "Expected": 10
+    "Input": {
+      "RomanNumber": "X"
+    },
+    "Expected": {
+      "Number": 10
+    }
   },
   {
-    "Input": "L",
-    "Expected": 50
+    "Input": {
+      "RomanNumber": "L"
+    },
+    "Expected": {
+      "Number": 50
+    }
   },
   {
-    "Input": "C",
-    "Expected": 100
+    "Input": {
+      "RomanNumber": "C"
+    },
+    "Expected": {
+      "Number": 100
+    }
   },
   {
-    "Input": "D",
-    "Expected": 500
+    "Input": {
+      "RomanNumber": "D"
+    },
+    "Expected": {
+      "Number": 500
+    }
   },
   {
-    "Input": "M",
-    "Expected": 1000
+    "Input": {
+      "RomanNumber": "M"
+    },
+    "Expected": {
+      "Number": 1000
+    }
   },
   {
-    "Input": "VI",
-    "Expected": 6
+    "Input": {
+      "RomanNumber": "VI"
+    },
+    "Expected": {
+      "Number": 6
+    }
   },
   {
-    "Input": "IX",
-    "Expected": 9
+    "Input": {
+      "RomanNumber": "IX"
+    },
+    "Expected": {
+      "Number": 9
+    }
   },
   {
-    "Input": "MMXXV",
-    "Expected": 2025
+    "Input": {
+      "RomanNumber": "MMXXV"
+    },
+    "Expected": {
+      "Number": 2025
+    }
   },
   {
-    "Input": "MCMXCIX",
-    "Expected": 1999
+    "Input": {
+      "RomanNumber": "MCMXCIX"
+    },
+    "Expected": {
+      "Number": 1999
+    }
   },
   {
-    "Input": "MCMXCIII",
-    "Expected": 1993
+    "Input": {
+      "RomanNumber": "MCMXCIII"
+    },
+    "Expected": {
+      "Number": 1993
+    }
   },
   {
-    "Input": "MMCM",
-    "Expected": 2900
+    "Input": {
+      "RomanNumber": "MMCM"
+    },
+    "Expected": {
+      "Number": 2900
+    }
   },
   {
-    "Input": "XVII",
-    "Expected": 17
+    "Input": {
+      "RomanNumber": "XVII"
+    },
+    "Expected": {
+      "Number": 17
+    }
   },
   {
-    "Input": "XIII",
-    "Expected": 13
+    "Input": {
+      "RomanNumber": "XIII"
+    },
+    "Expected": {
+      "Number": 13
+    }
   }
 ]

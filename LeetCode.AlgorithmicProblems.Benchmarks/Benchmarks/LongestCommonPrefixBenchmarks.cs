@@ -1,6 +1,8 @@
 ﻿using BenchmarkDotNet.Attributes;
 using LeetCode.AlgorithmicProblems.Problems.LongestCommonPrefix;
 using LeetCode.AlgorithmicProblems.Data.DataLoaders;
+using LeetCode.AlgorithmicProblems.Models.Input;
+using LeetCode.AlgorithmicProblems.Models.Output;
 
 namespace LeetCode.AlgorithmicProblems.Benchmarks.Benchmarks
 {
@@ -13,9 +15,9 @@ namespace LeetCode.AlgorithmicProblems.Benchmarks.Benchmarks
 
         [Benchmark]
         [ArgumentsSource(nameof(GetTestData))]
-        public string SolutionA(string[] words) => _solutionA.Solve(words);
+        public LongestCommonPrefixOutput SolutionA(LongestCommonPrefixInput input) => _solutionA.Solve(input);
 
-        public IEnumerable<string[]?> GetTestData()
+        public IEnumerable<LongestCommonPrefixInput> GetTestData()
         {
             var loader = new LongestCommonPrefixDataLoader();
             var data = loader.LoadData();

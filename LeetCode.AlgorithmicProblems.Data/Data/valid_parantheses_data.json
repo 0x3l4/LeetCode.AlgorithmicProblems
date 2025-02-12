@@ -1,62 +1,122 @@
 [
   {
-    "Input": "()",
-    "Expected": true
+    "Input": {
+      "Parantheses": "()"
+    },
+    "Expected": {
+      "IsValid": true
+    }
   },
   {
-    "Input": "()[]{}", 
-    "Expected": true
+    "Input": {
+      "Parantheses": "()[]{}"
+    },
+    "Expected": {
+      "IsValid": true
+    }
   },
   {
-    "Input": "(]",
-    "Expected": false
+    "Input": {
+      "Parantheses": "(]"
+    },
+    "Expected": {
+      "IsValid": false
+    }
   },
   {
-    "Input": "([])",
-    "Expected": true
+    "Input": {
+      "Parantheses": "([])"
+    },
+    "Expected": {
+      "IsValid": true
+    }
   },
   {
-    "Input": "({[]}",
-    "Expected": false
+    "Input": {
+      "Parantheses": "({[]}"
+    },
+    "Expected": {
+      "IsValid": false
+    }
   },
   {
-    "Input": "]",
-    "Expected": false
+    "Input": {
+      "Parantheses": "]"
+    },
+    "Expected": {
+      "IsValid": false
+    }
   },
   {
-    "Input": "(",
-    "Expected": false
+    "Input": {
+      "Parantheses": "("
+    },
+    "Expected": {
+      "IsValid": false
+    }
   },
   {
-    "Input": "{([)}]",
-    "Expected": false
+    "Input": {
+      "Parantheses": "{([)}]"
+    },
+    "Expected": {
+      "IsValid": false
+    }
   },
   {
-    "Input": "{{}}",
-    "Expected": true
+    "Input": {
+      "Parantheses": "{{}}"
+    },
+    "Expected": {
+      "IsValid": true
+    }
   },
   {
-    "Input": "[]]",
-    "Expected": false
+    "Input": {
+      "Parantheses": "[]]"
+    },
+    "Expected": {
+      "IsValid": false
+    }
   },
   {
-    "Input": "}}}",
-    "Expected": false
+    "Input": {
+      "Parantheses": "}}}"
+    },
+    "Expected": {
+      "IsValid": false
+    }
   },
   {
-    "Input": "[][][][]{}()",
-    "Expected": true
+    "Input": {
+      "Parantheses": "[][][][]{}()"
+    },
+    "Expected": {
+      "IsValid": true
+    }
   },
   {
-    "Input": "[(){([(){}[]]}]{}",
-    "Expected": false
+    "Input": {
+      "Parantheses": "[(){([(){}[]]}]{}"
+    },
+    "Expected": {
+      "IsValid": false
+    }
   },
   {
-    "Input": "[(){([(){}[]]}]{}]",
-    "Expected": false
+    "Input": {
+      "Parantheses": "[(){([(){}[]]}]{}]"
+    },
+    "Expected": {
+      "IsValid": false
+    }
   },
   {
-    "Input": "[(){([(){}[{[{[{[{[{[{}]}]}]}]}]}]])}]{}",
-    "Expected": true
+    "Input": {
+      "Parantheses": "[(){([(){}[{[{[{[{[{[{}]}]}]}]}]}]])}]{}"
+    },
+    "Expected": {
+      "IsValid": true
+    }
   }
 ]

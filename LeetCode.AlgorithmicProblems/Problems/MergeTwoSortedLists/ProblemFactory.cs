@@ -4,15 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LeetCode.AlgorithmicProblems.Problems.ValidParantheses;
-using LeetCode.AlgorithmicProblems.Models.Input;
-using LeetCode.AlgorithmicProblems.Models.Output;
+using LeetCode.AlgorithmicProblems.Problems.MergeTwoSortedLists;
 
-namespace LeetCode.AlgorithmicProblems.Problems.ValidParantheses
+namespace LeetCode.AlgorithmicProblems.Problems.MergeTwoSortedLists
 {
     public static class ProblemFactory
     {
-        public static IProblem<ValidParanthesesInput, ValidParanthesesOutput> GetProblemSolver(string type)
+        public static IProblem<(LinkedListNode<int>, LinkedListNode<int>), LinkedListNode<int>> GetProblemSolver(string type)
         {
             return type switch
             {

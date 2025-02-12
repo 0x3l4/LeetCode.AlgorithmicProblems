@@ -1,10 +1,12 @@
 ﻿using LeetCode.AlgorithmicProblems.Core;
+using LeetCode.AlgorithmicProblems.Models.Input;
+using LeetCode.AlgorithmicProblems.Models.Output;
 
 namespace LeetCode.AlgorithmicProblems.Problems.RomanToInteger
 {
     public static class ProblemFactory
     {
-        public static IProblem<string, int> GetProblemSolver(string type)
+        public static IProblem<RomanToIntegerInput, RomanToIntegerOutput> GetProblemSolver(string type)
         {
             return type switch
             {

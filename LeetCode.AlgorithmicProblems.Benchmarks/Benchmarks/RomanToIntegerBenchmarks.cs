@@ -1,6 +1,8 @@
 ﻿using BenchmarkDotNet.Attributes;
 using LeetCode.AlgorithmicProblems.Problems.RomanToInteger;
 using LeetCode.AlgorithmicProblems.Data.DataLoaders;
+using LeetCode.AlgorithmicProblems.Models.Input;
+using LeetCode.AlgorithmicProblems.Models.Output;
 
 namespace LeetCode.AlgorithmicProblems.Benchmarks.Benchmarks
 {
@@ -13,9 +15,9 @@ namespace LeetCode.AlgorithmicProblems.Benchmarks.Benchmarks
 
         [Benchmark]
         [ArgumentsSource(nameof(GetTestData))]
-        public int SolutionA(string romanNumber) => _solutionA.Solve(romanNumber);
+        public RomanToIntegerOutput SolutionA(RomanToIntegerInput input) => _solutionA.Solve(input);
 
-        public IEnumerable<string?> GetTestData()
+        public IEnumerable<RomanToIntegerInput> GetTestData()
         {
             var loader = new RomanToIntegerDataLoader();
             var data = loader.LoadData();
