@@ -15,6 +15,15 @@ namespace LeetCode.AlgorithmicProblems.Tests.TestCases
             Assert.Equal(expected.Indicies, problem.Solve(input).Indicies);
         }
 
+        [Theory]
+        [MemberData(nameof(GetTestData))]
+        [Trait("TwoSum", "B")]
+        public void SolutionB_ShouldReturnCorrectResult(TwoSumInput input, TwoSumOutput expected)
+        {
+            var problem = ProblemFactory.GetProblemSolver("B");
+            Assert.Equal(expected.Indicies, problem.Solve(input).Indicies);
+        }
+
         public static IEnumerable<object[]> GetTestData()
         {
             var loader = new TwoSumDataLoader();

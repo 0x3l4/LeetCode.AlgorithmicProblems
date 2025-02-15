@@ -43,5 +43,23 @@
     "Expected": {
       "Indicies": [ 1, 2 ]
     }
+  },
+  {
+    "Input": {
+      "Numbers": [ 1, 3, 5, 7, 9, 11, 13 ],
+      "Target": 22
+    },
+    "Expected": {
+      "Indicies": [ 4, 6 ]
+    }
+  },
+  {
+    "Input": {
+      "Numbers": [ 13, 12, 5, 34, 58, 71 ],
+      "Target": 84
+    },
+    "Expected": {
+      "Indicies": [ 0, 5 ]
+    }
   }
 ]

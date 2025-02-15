@@ -16,6 +16,7 @@ namespace LeetCode.AlgorithmicProblems.Problems.TwoSum
             return type switch
             {
                 "A" => new SolutionA(),
+                "B" => new SolutionB(),
                 _ => throw new ArgumentException("Invalid problem type")
             };
         }

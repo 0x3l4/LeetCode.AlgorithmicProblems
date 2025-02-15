@@ -9,10 +9,10 @@ namespace LeetCode.AlgorithmicProblems
     {
         public static void Main()
         {
-            var problem = Problems.TwoSum.ProblemFactory.GetProblemSolver("A");
+            var problem = Problems.TwoSum.ProblemFactory.GetProblemSolver("B");
             var runner = new ProblemRunner<TwoSumInput, TwoSumOutput>(problem);
 
-            runner.Run(new TwoSumInput() { Numbers = [1, 2, 4, 3], Target = 7 });
+            runner.Run(new TwoSumInput() { Numbers = [3, 3], Target = 6 });
         }
     }
 }
