@@ -5,18 +5,6 @@
 
 ---
 
-## Структура проекта
-
-```
-LeetCode.AlgorithmicProblems/
-├── Problems/                          # Определения задач и решения
-└── Services/                          # Основные сервисы (например, ProblemRunner)
-LeetCode.AlgorithmicProblems.Tests/    # Тесты и входные данные
-└── TestData/                          # Данные для тестов
-```
-
----
-
 ## Навигация по задачам
 
 <details>
@@ -24,9 +12,11 @@ LeetCode.AlgorithmicProblems.Tests/    # Тесты и входные данны
 
 |  #  |    Задача    | Ссылка на решение  |
 |-----|--------------|------------|
+|1    | [**Two Sum**](https://leetcode.com/problems/two-sum) | [Решения](LeetCode.AlgorithmicProblems/Problems/TwoSum/) |
 |9    | [**Palindrome Number**](https://leetcode.com/problems/palindrome-number) | [Решения](LeetCode.AlgorithmicProblems/Problems/PalindromeNumber/) |
 |13   | [**Roman to Integer**](https://leetcode.com/problems/roman-to-integer) | [Решения](LeetCode.AlgorithmicProblems/Problems/RomanToInteger/) |
 |14   | [**Longest Common Prefix**](https://leetcode.com/problems/longest-common-prefix) | [Решения](LeetCode.AlgorithmicProblems/Problems/LongestCommonPrefix/) |
+|20   | [**Valid Parentheses**](https://leetcode.com/problems/valid-parentheses) | [Решения](LeetCode.AlgorithmicProblems/Problems/ValidParantheses/) |
 
 </details>
 
