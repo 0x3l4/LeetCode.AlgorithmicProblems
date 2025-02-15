@@ -5,25 +5,6 @@ All solutions are my personal implementation of problems from the LeetCode platf
 
 ---
 
-## Project Structure
-
-```
-LeetCode.AlgorithmicProblems/
-├── Core/                                # Interfaces and abstractions for problem definitions
-├── Problems/                            # Problem definitions and solutions
-└── Services/                            # Core services (e.g., ProblemRunner)
-LeetCode.AlgorithmicProblems.Data/       # Data loaders and JSON input files
-├── Models/                              # Problem definitions and solutions
-├── DataLoaders/                         # Data loader classes
-└── Data/                                # JSON files used for problem data
-LeetCode.AlgorithmicProblems.Benchmarks/ # Benchmark tests for performance evaluation
-└──Benchmarks                            # Benchmark classes
-LeetCode.AlgorithmicProblems.Tests/      # Unit tests and test data
-└── TestCases/                           # Test classes
-```
-
----
-
 ## Navigation by Problems
 
 <details>
