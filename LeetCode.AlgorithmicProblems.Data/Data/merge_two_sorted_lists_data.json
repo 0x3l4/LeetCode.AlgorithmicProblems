@@ -1,0 +1,20 @@
+[
+  {
+    "Input": {
+      "Numbers": [ 1, 2, 3, 4 ],
+      "Target": 7
+    },
+    "Expected": {
+      "Indicies": [ 2, 3 ]
+    }
+  },
+  {
+    "Input": {
+      "Numbers": [ 2, 7, 11, 15 ],
+      "Target": 9
+    },
+    "Expected": {
+      "Indicies": [ 0, 1 ]
+    }
+  }
+]

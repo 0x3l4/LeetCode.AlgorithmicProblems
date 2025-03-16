@@ -1,6 +1,4 @@
-﻿using LeetCode.AlgorithmicProblems.Models.Input;
-using LeetCode.AlgorithmicProblems.Models.Output;
-using LeetCode.AlgorithmicProblems.Problems.TwoSum;
+﻿using LeetCode.AlgorithmicProblems.Problems.TwoSum;
 
 namespace LeetCode.AlgorithmicProblems.Tests.TestCases
 {

@@ -1,6 +1,4 @@
-﻿using LeetCode.AlgorithmicProblems.Models.Input;
-using LeetCode.AlgorithmicProblems.Models.Output;
-using LeetCode.AlgorithmicProblems.Problems.LongestCommonPrefix;
+﻿using LeetCode.AlgorithmicProblems.Problems.LongestCommonPrefix;
 
 namespace LeetCode.AlgorithmicProblems.Tests.TestCases
 {

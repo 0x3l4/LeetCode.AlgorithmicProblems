@@ -1,13 +1,13 @@
 ﻿
 namespace LeetCode.AlgorithmicProblems.Models.Output
 {
-    public class ValidParanthesesOutput
+    public class MergeTwoSortedListsOutput
     {
-        public bool IsValid { get; set; }
+        LinkedListNode<int> MergedLists { get; set; }
 
         public override string ToString()
         {
-            return $"IsValid: {IsValid}";
+            return base.ToString();
         }
     }
 }

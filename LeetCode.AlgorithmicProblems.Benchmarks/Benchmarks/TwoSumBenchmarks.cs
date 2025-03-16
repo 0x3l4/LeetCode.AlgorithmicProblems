@@ -17,10 +17,15 @@ namespace LeetCode.AlgorithmicProblems.Benchmarks.Benchmarks
     public class TwoSumBenchmarks
     {
         private readonly SolutionA _solutionA = new();
+        private readonly SolutionB _solutionB = new();
 
         [Benchmark]
         [ArgumentsSource(nameof(GetTestData))]
         public TwoSumOutput SolutionA(TwoSumInput input) => _solutionA.Solve(input);
+
+        [Benchmark]
+        [ArgumentsSource(nameof(GetTestData))]
+        public TwoSumOutput SolutionB(TwoSumInput input) => _solutionB.Solve(input);
 
         public IEnumerable<TwoSumInput> GetTestData()
         {

@@ -1,6 +1,4 @@
-﻿using LeetCode.AlgorithmicProblems.Models.Input;
-using LeetCode.AlgorithmicProblems.Models.Output;
-using LeetCode.AlgorithmicProblems.Problems.PalindromeNumber;
+﻿using LeetCode.AlgorithmicProblems.Problems.PalindromeNumber;
 
 namespace LeetCode.AlgorithmicProblems.Tests.TestCases
 {
